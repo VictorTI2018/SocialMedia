@@ -19,7 +19,7 @@
           <label for="imagem">Imagem</label>
         </v-grid>
         <v-grid class="col s2 offset-s10" v-if="conteudo.titulo">
-          <button class="waves-effect waves-light btn">Publicar</button>
+          <button class="waves-effect waves-light btn" @click="addConteudo">Publicar</button>
         </v-grid>
       </v-grid>
     </div>
@@ -38,6 +38,11 @@ export default {
         imagem: ""
       }
     };
+  },
+  methods: {
+    addConteudo() {
+      console.log("ok")
+    }
   }
 };
 </script>
