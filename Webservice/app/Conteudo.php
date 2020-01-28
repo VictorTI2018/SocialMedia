@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Conteudo extends Model {
 
-    protected $table = 'tb_conteudis';
+    protected $table = 'tb_conteudos';
     protected $primaryKey = 'id_usuario';
 
     protected $fillable = [
